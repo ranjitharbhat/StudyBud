@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./Portfolio_files/styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <a href="http://127.0.0.1:5500/index.html#welcome-section">About</a>
+
+      <a href="http://127.0.0.1:5500/index.html#projects">Work</a>
+    </nav>
+    <div id="welcome-text">
+      <welcome id="welcome-section">
+        <h1>Hey there! I'm Ranjitha R Bhat</h1>
+        <br>
+        <h2>a student at NMAMIT</h2>
+      </welcome>
+    </div>
+    <projects id="projects">
+      <project-tile class="project-tile">
+        <h2>These are some of my projects</h2>
+        <hr>
+        <div id="grid">
+          <div>
+            <a href="http://127.0.0.1:5500/build-tech-doc/index.html" target="_blank">
+              <img src="./Portfolio_files/build-tech-doc.png" alt="build-tech-doc" height="300px" width="400px">
+              <h3>Technical Documentation Page</h3>
+            </a>
+          </div>
+          <div>
+            <a href="http://127.0.0.1:5500/luruki-website/index.html" target="_blank">
+              <img src="./Portfolio_files/luruki-website.png" alt="luruki-website" height="300px" width="400px">
+              <h3>Luruki Website</h3></a>
+          </div>
+          <div>
+            <a href="http://127.0.0.1:5500/product-landing-page/index.html" target="_blank">
+              <img src="./Portfolio_files/product-landing-page.png" alt="product-landing-page" height="300px" width="400px">
+              <h3>Product landing Page</h3></a>
+          </div>
+          <div>
+            <a href="http://127.0.0.1:5500/survey-page/index.html" target="_blank">
+              <img src="./Portfolio_files/survey-page.png" alt="survey-page" height="300px" width="400px">
+              <h3>Survey Page</h3></a>
+          </div>
+          <div>
+            <a href="http://127.0.0.1:5500/tribute-page/index.html" target="_blank">
+              <img src="./Portfolio_files/tribute-page.png" alt="tribute-page" height="300px" width="400px">
+              <h3>Tribute Page</h3></a>
+          </div>
+        </div>
+        <div id="tail">
+          <h1>Let's work together...</h1>
+          <a id="profile-link" href="https://github.com/ranjitharbhat" target="_blank">github</a>
+          <a id="profile-link" href="http://127.0.0.1:5500/index.html#" target="_blank">Send a mail</a>
+        </div>
+      </project-tile>
+    </projects>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
